@@ -13,7 +13,7 @@
 	},
 	"scripts": {
 		"test": "echo 'Without tests'",
-		"lint": "grunt lint",
+		"lint": "grunt lint --force",
 		"start": "grunt start"
 	}
 }

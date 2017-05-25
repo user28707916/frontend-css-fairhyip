@@ -3,10 +3,16 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		csslint: {
+			options: {
+				csslintrc: '.csslintrc',
+				formatters: [
+					// {id: 'csslint-xml', dest: 'report/csslint.xml'}
+					//{id: require('csslint-stylish'), dest: 'report/csslint_stylish.xml'}
+				],
+				quiet: false,
+				quiet_all: false
+			},
 			main: {
-				options: {
-					csslintrc: '.csslintrc'
-				},
 				src: [
 					SRC_DIR + '/**/*.css',
 					'!' + SRC_DIR + '/**/reset.css',
@@ -34,5 +40,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('start', ['watch']);
-	grunt.registerTask('lint', ['csslint:main']);
+	grunt.registerTask('lint', ['csslint']);
 };
