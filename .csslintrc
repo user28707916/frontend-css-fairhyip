@@ -33,5 +33,6 @@
 	"universal-selector": 2,
 	"unqualified-attributes": 1,
 	"vendor-prefix": 2,
-	"zero-units": 2
+	"zero-units": 2,
+	"order-alphabetical": false
 }

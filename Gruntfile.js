@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 		csslint: {
 			main: {
 				options: {
-					csslintrc: 'tasks/.csslintrc'
+					csslintrc: '.csslintrc'
 				},
 				src: [
 					SRC_DIR + '/**/*.css',
@@ -33,10 +33,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('live', ['watch']);
-	grunt.registerTask('test', ['csslint:main']);
-	
-	//BAT files mirrors
-    grunt.registerTask('livereload', ['live']);
-	grunt.registerTask('analize', ['test']);
+	grunt.registerTask('start', ['watch']);
+	grunt.registerTask('lint', ['csslint:main']);
 };

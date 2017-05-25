@@ -2,17 +2,18 @@
 	"name": "frontend-css-styles",
 	"description": "Write styles for an existing HTML",
 	"author": "Constantine Genchevsky",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"dependencies": {
 
 	},
 	"devDependencies": {
 		"grunt": "1.0.1",
-		"grunt-contrib-csslint": "1.0.0",
+		"grunt-contrib-csslint": "2.0.0",
 		"grunt-contrib-watch": "1.0.0"
 	},
 	"scripts": {
-		"test": "grunt test",
-		"live": "grunt live"
+		"test": "echo 'Without tests'",
+		"lint": "grunt lint",
+		"start": "grunt start"
 	}
 }
