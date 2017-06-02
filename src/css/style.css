@@ -43,9 +43,10 @@ body {
 -----------------------------------------------------------------------------*/
 .logo{
 	position: absolute;
-    left: 0px;
+    left: 33px;
 	top: 65px;
-
+	
+  
 }
 .header .logo img {
 	display: block;
@@ -170,6 +171,8 @@ h1 {
 	font-family: Georgia;
 	color: #ead4aa;
 	font-style: normal;
+	white-space: nowrap;
+	display:inline-block;
     font-size: 22px;
     font-weight: 300;
     padding-bottom: 110px;
@@ -177,6 +180,7 @@ h1 {
     padding-top: 20px;
     margin-left: -143px;
     margin-bottom: -95px;
+	padding-right: 355px;
 	background-image: url(../images/bg_about.png),url(../images/bg_promo.png);
 	background-repeat: no-repeat, repeat;
     background-repeat: no-repeat, repeat;
@@ -204,22 +208,25 @@ h2:first-child{
 	margin-left: 143px;
 	color: #f9da5a;
 	padding-bottom: 55px;
-    width: 857px;
+    width: 807px;
 }
 
 .article p{
     margin: 0 143px 0.5em;
-	width: 847px;
+	width: 807px;
 }
 
-/* Logo middle
+/* Img middle
 -----------------------------------------------------------------------------------------*/
-.header .logo {
+.content img {
 	display: block;
     margin-left: 20px;
-	height: 90;
+	height: 65px;
 	width: auto;
+	
 }
+
+.content:nth-child(2) img {transform: translate(0,50%);}
 
 
 
@@ -229,8 +236,8 @@ h2:first-child{
 -----------------------------------------------------------------------------------------*/
 .footer {
 	width: 1000px;
-	margin: -80px auto 0;
-	height: 80px;
+	margin: -75px auto 0;
+	height: 75px;
 	position: relative;
 	border-top: 1px solid #f9da5a; 
 }
